@@ -11,6 +11,14 @@
     <link type="text/css" rel="stylesheet" href="{% static 'core/css/menu.css'%}" />
     <title>Menu</title>
 </head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+#notificacion{
+    font-size: 20px;
+    color: orangered;
+    font-family: 'lobster', cursive;
+}    
+</style>
 <body>
 
 
@@ -58,7 +66,7 @@
 <br>
 {% if messages %}
 {% for message in messages %}
-<div class="notification {{ message.tags}}">
+<div class="notification {{ message.tags}}" id="notificacion">
     {{ message }}
 </div>
 {% endfor %}

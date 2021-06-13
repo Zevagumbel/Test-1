@@ -17,6 +17,9 @@ margin-top: 30px;
 label{
 color: yellow;
 }
+p{
+color: rgb(252, 146, 7);
+}
 
 </style>
 <body>
@@ -71,17 +74,20 @@ Registro de usuario
         <div class="form-row" id="formularioXD">
             <div class="form-group col-md-6">
             
-            <label for="username">Username</label>
+            <label for="username">Nombre de usuario</label>
             <input type="text" class="form-control" id="usuario" name="username" value="{{User.username}}">
 
             <label for="email">Email</label>
             <input type="text" class="form-control" id="Email" name="email" value="{{User.email}}">
+            <p>Debe ser con un email valido</p>
             
             <label for="password1">Contraseña</label>
-            <input type="password" id="Contraseña" class="form-control" name="password1" value="{{User.password1}}">
+            <input type="password" id="Contraseña" pattern=".{8,}" class="form-control" name="password1" value="{{User.password1}}">
+            <p>La Contraseña debe tener por lo minimo 8 caracteres</p>
+            <p>La Contraseña no debe ser similar al nombre del usuario</p>
 
             <label for="password2">Confirma Contraseña</label>
-            <input type="password" id="Contraseña2"  class="form-control" name="password2" value="{{User.password2}}">
+            <input type="password" id="Contraseña2" pattern=".{8,}" class="form-control" name="password2" value="{{User.password2}}">
 
             </div>
           </div>
