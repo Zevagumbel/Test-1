@@ -9,7 +9,26 @@
     <link type="text/css" rel="stylesheet" href="{% static 'core/css/login.css' %}" />
     <title>Inicio de sesion</title>
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#formularioXD{
+margin-top: 30px;
+}
+
+label{
+color: yellow;
+font-family: 'lobster', cursive;
+}
+
+button{
+font-family: 'lobster', cursive;
+}
+
+</style>
+
 </head>
+
 <body>
     <nav class="container">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navegador">
@@ -52,23 +71,29 @@
         </nav>
     </nav>
 
-
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
+    <header>
+        <h1 style="margin-top: 90px; color: rgb(23, 184, 77); ">
+        Inicio de sesion
+        </h1>    
+        </header>
+    
     <form class="form" method="post">
         {% csrf_token %}
-        {{ form.as_p }}
+    <div class="form-row" id="formularioXD">
+        <div class="form-group col-md-6">
 
-        <button type="submit" id="submit">
-            Login
-        </button>
+        <label for="id_username">Username</label>
+        <input type="text" name="username" autocomplete="username" maxlength="150" class="form-control"  id="id_username">
+
+        <label for="id_password">Password:</label>
+        <input type="password" name="password" autocomplete="current-password" class="form-control"  id="id_password">
+    
+        </div>
+    </div>
+
+    <button type="submit" id="submit" class="btn btn-primary">
+        Iniciar Sesion
+    </button>
 
     </form> 
 
