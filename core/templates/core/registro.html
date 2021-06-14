@@ -21,6 +21,15 @@ p{
 color: rgb(252, 146, 7);
 }
 
+.fondoWebsec{
+background: url(https://i.pinimg.com/originals/da/a6/55/daa6550f1247a73508c5560300d9d697.jpg);
+max-width: 50%;
+max-height: 80%;
+border-radius: 20px;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
 </style>
 <body>
     <nav class="container">
@@ -71,6 +80,7 @@ Registro de usuario
 
    <form class="form" method="post">
         {% csrf_token %}
+    <div class="fondoWebsec"> 
         <div class="form-row" id="formularioXD">
             <div class="form-group col-md-6">
             
@@ -91,7 +101,7 @@ Registro de usuario
 
             </div>
           </div>
-
+    </div>
           <button type="submit" id="submit" class="btn btn-primary">
             registrarse
         </button>
