@@ -35,7 +35,8 @@ def login(request):
 def logout(request):
     return render(request,'core/logout.html')
 
-
+def formulario_registro(request):
+    return render(request,'core/formulario_arriendo.html')
 
 
 
