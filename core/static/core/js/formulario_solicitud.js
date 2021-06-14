@@ -5,8 +5,11 @@ $("#formulario").validate({
         minlength: 11
       },      
       nombre: "required",
-      mensaje: {
+      bicicleta: {
           required: true
+      },
+      aro: {
+        required: true
       },
       correo: {
         required: true,
@@ -19,7 +22,8 @@ $("#formulario").validate({
     
     messages: {
       nombre: "Por favor ingrese el nombre completo ",
-      mensaje: "Por favor llene este campo",
+      bicicleta: "Por favor eliga una opcion",
+      aro: "Por favor eliga una opcion",
       correo: "Por favor ingrese el correo",
       telefono: "Por favor ingrese numero telefonico",
       rut: {
