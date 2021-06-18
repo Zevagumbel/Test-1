@@ -95,13 +95,6 @@ textarea{
     background-color: #60371E;
     bottom: 0;
 }
-
-.BARRAz{
-    margin-top: 30px;
-    width: 600px;
-    height: 40px;
-    margin-left: 58px;
-}
 #rut{
     margin-top: -10px;
     width: 500px;
@@ -145,7 +138,7 @@ height: 50px;
 }
 
 #l_nombre_completo{
-margin-top: 30px;
+margin-top: 20px;
 color: white;
 }
 
@@ -167,22 +160,22 @@ margin-top: 15px;
 }
 
 #l_correo{
-margin-top: 105px;
+margin-top: 20px;
 color: white;
 }
 
 #l_numero{
-    margin-top: 160px;   
+    margin-top: 22px;   
     color: white; 
 }
 
 #l_cleta{
-    margin-top: 140px; 
+    margin-top: 18px; 
     color: white; 
 }
 
 #l_aro{
-    margin-top: 180px;  
+    margin-top: 20px;  
     color: white;
 }
 
@@ -191,7 +184,7 @@ color: white;
 }
 
 #Enviar{
-    margin-top: 250px;
+    margin-top: 50px;
 }
 
     @media screen and (max-width:500px) {     .grid-container {         display: flex;         flex-direction: column;     } }
